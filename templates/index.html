@@ -1,0 +1,71 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+{% load static %} 
+
+<div style="margin-top: 100px; background-color: #F8E9A1; background-image: url({% static 'image/college3.jpg' %});" class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <img src="{% static 'image/logo3.png' %}">
+      <!--
+        <h1 style="text-align: center; font-family: garamond; font-weight: bolder; color: #C3073F;">PECOPEDIA</h1>
+        <h3 style="text-align: center; font-family: cursive; padding-top: 3px; padding-bottom: 15px;">"A Quora for PEC"</h3>
+      -->
+        <hr style="margin-right: 30rem;"></hr>
+        <h2 style="padding-top: 20px; padding-left: 30px; font-family: garamond; font-weight: bolder;">Student Guide Stats</h2>
+        <p style="padding-left: 30px;">App has the following record counts:</p>
+        <ul style="padding-left: 60px;">
+          <li><strong>Authors:</strong> {{ num_authors }}</li>
+          <li><strong>Questions:</strong> {{ num_questions }}</li>
+          <li><strong>Answers:</strong> {{ num_answers }}</li>
+          <li><strong>Comments:</strong> {{ num_comments }}</li>
+        </ul>
+        <hr style="margin-right: 30rem;"></hr>
+    </div>
+
+    <div class="container">
+      <section style="padding-top: 20px; padding-left: 30px;">
+          <h2 style="font-family: garamond; font-weight: bolder;">Our Mission</h2>
+          <p style="font-family: sans-serif;">"We want to <strong><em>connect the people who have the knowledge to the people who need it</em></strong>,<br> to bring together people with <strong><em>different perspectives</em></strong> so they can understand each other<br> better, and to <strong><em>empower everyone to share their knowledge</em></strong> for the benefit of the rest of<br> the people's."</p>
+        </section>
+    </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid" style="background-image: url({% static 'image/team3.jpg' %}); padding-bottom: 10px; padding-top: 10px;">
+  <div style="padding-left: 30px;" class="container">
+    <h2 style="font-family: garamond; font-weight: bolder; padding-left: 10px;">Meet the Team</h2>
+    <hr>
+    <div style="text-align: center; padding-top: 10px;" class="row">
+
+      <div class="col-lg-3">
+        <p style="font-family: sans-serif;"><strong>Pallab Saha</strong><br>ECE'22<br><em>Front-end Developer</em>
+        </p>
+      </div>
+
+      <div class="col-lg-3">
+        <p style="font-family: sans-serif;"><strong>Divyum Sethi</strong><br>ECE'22<br><em>Back-end Developer</em>
+        </p>
+      </div>
+
+      <div class="col-lg-3">
+        <p style="font-family: sans-serif;"><strong>Malkeet Singh</strong><br>ECE'22<br><em>Front-end Developer</em>
+        </p>
+      </div>
+
+      <div class="col-lg-3">
+        <p style="font-family: sans-serif;"><strong>Subhdeep Singh</strong><br>ECE'22<br><em>Back-end Developer</em>
+        </p>
+        <hr>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<footer style="background: #0B0C10; margin: -15px; height: 50px;">
+  <div class="container">
+    <p style="color: white; padding-top: 5px;">2020 &copy Pecopedia All Rights Reserved</p>
+  </div>
+ </footer>
+  
+{% endblock %}

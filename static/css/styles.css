@@ -1,0 +1,17 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav {
+	padding-top: 100px;
+}
+
+#image-large{
+	padding: 0;
+	display: block;
+	margin: 0 auto auto 0;
+	height: 100px;
+	width: 100px;
+}
